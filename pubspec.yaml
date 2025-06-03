@@ -1,0 +1,23 @@
+name: twitter_signin
+description: >
+  A Flutter package providing a clean, customizable, and easy-to-use OAuth 2.0
+  authentication flow for Twitter. Supports seamless sign-in integration in your
+  Flutter apps without relying on third-party SDKs.
+version: 0.0.1
+homepage: "https://github.com/Mahamudul-Dev/twitter_signin"
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  crypto: ^3.0.6
+  flutter:
+    sdk: flutter
+  flutter_web_auth: ^0.6.0
+  http: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
