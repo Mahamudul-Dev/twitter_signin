@@ -120,8 +120,3 @@ If you find this package helpful, please give it a ⭐️ on GitHub!
 
 Created by Mahamudul Hasan
 GitHub: [https://github.com/Mahamudul-Dev](https://github.com/Mahamudul-Dev)
-
----
-
-Let me know if you want me to help generate example app code or CI config next!
-```
