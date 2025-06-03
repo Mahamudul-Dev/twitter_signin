@@ -89,60 +89,6 @@ This package implements the OAuth 2.0 Authorization Code Flow with PKCE:
 * **TwitterToken**
   Model class representing access and refresh tokens.
 
----
-
-## Testing
-
-This package is designed to be testable:
-
-* Inject your own HTTP client (e.g., a mock client) in `TwitterOAuth2`.
-* Inject a fake user authentication callback to simulate user login.
-* Write unit tests using Flutter's default test framework.
-
-Example test snippet:
-
-```dart
-final twitterOAuth2 = TwitterOAuth2(
-  config: TwitterOAuth2Config(
-    clientId: 'test-client-id',
-    redirectUri: 'myapp://callback',
-  ),
-  authenticateUser: ({required url, required scheme}) async {
-    return 'myapp://callback?code=fake_code';
-  },
-  httpClient: MockHttpClient(), // Implement your mock client returning test data
-);
-
-test('successful authentication returns token', () async {
-  final token = await twitterOAuth2.authenticate();
-  expect(token.accessToken, isNotEmpty);
-});
-```
-
----
-
-## Publishing Your Package to pub.dev
-
-1. Make sure you have an account on [pub.dev](https://pub.dev/).
-
-2. Prepare your package:
-
-   * Update `pubspec.yaml` with correct metadata (name, description, version, author, homepage).
-   * Add a `README.md` (this file).
-   * Include a `CHANGELOG.md` describing changes per version.
-   * Add a license file (`LICENSE` or `LICENSE.md`).
-
-3. Run `flutter pub publish --dry-run` to verify.
-
-4. When ready, run:
-
-   ```bash
-   flutter pub publish
-   ```
-
-5. Follow the prompts to publish.
-
----
 
 ## Contributing
 
