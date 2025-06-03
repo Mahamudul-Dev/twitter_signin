@@ -1,6 +1,3 @@
-Absolutely! Here's a complete, all-in-one `README.md` for your `twitter_signin` Flutter package, including setup, usage, testing, contribution, and publishing instructions:
-
-````markdown
 # twitter_signin
 
 A Flutter package providing a clean, customizable, and easy-to-use OAuth 2.0  
@@ -177,8 +174,6 @@ If you find this package helpful, please give it a ⭐️ on GitHub!
 
 Created by Mahamudul Hasan
 GitHub: [https://github.com/Mahamudul-Dev](https://github.com/Mahamudul-Dev)
-
-```
 
 ---
 
